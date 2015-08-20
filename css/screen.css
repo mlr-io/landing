@@ -78,6 +78,7 @@ section#inclusive > header h1 {
 }
 
 section#extensible > header h1 {
+  background: rgba(161, 0, 255, 0.88)
 }
 
 footer {
