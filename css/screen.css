@@ -1,0 +1,87 @@
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+}
+
+body, html {
+  font-family: 'Montserrat';
+
+  color: #333;
+}
+
+body > header {
+  text-align: center;
+  padding: 10vh 0px;
+
+  background-image: url(https://unsplash.it/3440/1440);
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+body > header #logo {
+  width: 360px;
+  display: block;
+  margin: 0px auto;
+}
+
+body > header #title {
+  text-align: center;
+  font-size: 26px;
+  color: #FFF;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+section {
+  min-height: 500px;
+}
+
+section > header {
+  background-image: url(../img/tile.svg);
+  background-attachment: fixed;
+}
+
+section > header h1 {
+  width: 100%;
+  color: #FFF;
+  text-align: center;
+
+  font-size: 45px;
+  padding: 50px 0px;
+
+  background: rgba(57, 57, 57, .88);
+}
+
+section#intro h1 {
+  width: 100%;
+  text-align: center;
+  font-size: 35px;
+  padding: 50px 0px
+}
+
+section#open > header h1 {
+  background: rgba(255, 57, 57, .88);
+}
+
+section#inclusive > header h1 {
+  background: rgba(57, 57, 255, .88);
+}
+
+section#extensible > header h1 {
+}
+
+footer {
+  padding: 20px 0;
+  font-size: 14px;
+  color: #7d838a;
+  background-color: #373a3e;
+  width: 100%;
+  line-height: 20px;
+  overflow: hidden;
+}
