@@ -47,6 +47,10 @@ section > header {
   background-attachment: fixed;
 }
 
+section > p {
+  padding: 20px;
+}
+
 section > header h1 {
   width: 100%;
   color: #FFF;
@@ -84,4 +88,11 @@ footer {
   width: 100%;
   line-height: 20px;
   overflow: hidden;
+}
+
+.scaffolding {
+  width: 100%;
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
 }
