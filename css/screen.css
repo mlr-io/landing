@@ -43,7 +43,7 @@ section.card {
   margin: 0px auto;
   border: 1px solid#DDD;
   margin-bottom: 65px;
-  text-align: center;
+  text-align: left;
   box-shadow: 0px 0px 3px #DDD;
 }
 
@@ -56,6 +56,8 @@ section.card.gears {
 section.card .body {
   width: 100%;
   background: #FFF;
+  padding: 20px;
+  overflow: hidden;
 }
 
 section.card .holograph {
@@ -75,10 +77,6 @@ section.card .holograph.purple {
   background: rgba(161, 0, 255, 0.88);
 }
 
-section.card > p {
-  padding: 20px;
-}
-
 section.card h1 {
   width: 100%;
   color: #FFF;
@@ -86,6 +84,24 @@ section.card h1 {
 
   font-size: 45px;
   padding: 35px 0px;
+}
+
+section.card img {
+  width: 250px;
+  height: 250px;
+}
+
+section.card .body p {
+  padding: 5px 20px;
+  float: left;
+}
+
+section.card img.left {
+  float: left;
+}
+
+section.card img.right {
+  float: right;
 }
 
 section#intro h1 {
@@ -157,4 +173,8 @@ input[type=submit]:hover {
 
 form {
   padding: 20px;
+}
+
+#mc_embed_signup {
+  text-align: center;
 }
