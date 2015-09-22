@@ -39,7 +39,6 @@ body > header #title {
 }
 
 section.card {
-  min-height: 500px;
   max-width: 1024px;
   margin: 0px auto;
   border: 1px solid#DDD;
@@ -48,25 +47,45 @@ section.card {
   box-shadow: 0px 0px 3px #DDD;
 }
 
-section.card > header {
+section.card.gears {
   background-image: url(../img/tile.svg);
   background-attachment: fixed;
   background-size: 35%;
+}
+
+section.card .body {
+  width: 100%;
+  background: #FFF;
+}
+
+section.card .holograph {
+  background: rgba(57, 57, 57, .88);
+  color: #FFF;
+}
+
+section.card .holograph.red {
+  background: rgba(255, 57, 57, .88);
+}
+
+section.card .holograph.blue {
+  background: rgba(57, 57, 255, .88);
+}
+
+section.card .holograph.purple {
+  background: rgba(161, 0, 255, 0.88);
 }
 
 section.card > p {
   padding: 20px;
 }
 
-section.card > header h1 {
+section.card h1 {
   width: 100%;
   color: #FFF;
   text-align: center;
 
   font-size: 45px;
-  padding: 50px 0px;
-
-  background: rgba(57, 57, 57, .88);
+  padding: 35px 0px;
 }
 
 section#intro h1 {
@@ -76,16 +95,13 @@ section#intro h1 {
   padding: 50px 0px
 }
 
-section#open > header h1 {
-  background: rgba(255, 57, 57, .88);
+section#updates .holograph {
+  width: 100%;
+  height: 100%;
 }
 
-section#inclusive > header h1 {
-  background: rgba(57, 57, 255, .88);
-}
-
-section#extensible > header h1 {
-  background: rgba(161, 0, 255, 0.88)
+section#updates h1 {
+  padding-bottom: 10px;
 }
 
 footer {
@@ -103,4 +119,42 @@ footer {
   max-width: 960px;
   margin-left: auto;
   margin-right: auto;
+}
+
+input[type=email] {
+  height: 40px;
+  width: 400px;
+  border: 1px solid #DDD;
+  outline: none;
+  font-size: 18px;
+  padding-left: 7px;
+  margin: 10px;
+
+  transition: border-color .5s linear;
+}
+
+input[type=email]:focus {
+  border: 1px solid #06B2FF;
+}
+
+input[type=submit] {
+  width: 400px;
+  height: 40px;
+  background-color: #06B2FF;
+  color: #503D3D;
+  font-size: 19px;
+  cursor: pointer;
+  color: #FFF;
+
+  margin: 10px;
+
+  transition: background-color .5s, border-size .5s;
+}
+
+input[type=submit]:hover {
+  background-color: #0497FB;
+}
+
+form {
+  padding: 20px;
 }
