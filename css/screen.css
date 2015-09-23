@@ -63,6 +63,9 @@ section.card .body {
 section.card .holograph {
   background: rgba(57, 57, 57, .88);
   color: #FFF;
+
+  padding: 35px 0px;
+  width: 100%;
 }
 
 section.card .holograph.red {
@@ -83,7 +86,6 @@ section.card h1 {
   text-align: center;
 
   font-size: 45px;
-  padding: 35px 0px;
 }
 
 section.card img {
@@ -112,12 +114,7 @@ section#intro h1 {
 }
 
 section#updates .holograph {
-  width: 100%;
   height: 100%;
-}
-
-section#updates h1 {
-  padding-bottom: 10px;
 }
 
 footer {
@@ -172,7 +169,7 @@ input[type=submit]:hover {
 }
 
 form {
-  padding: 20px;
+  padding: 35px 0px;
 }
 
 #mc_embed_signup {
