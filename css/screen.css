@@ -144,6 +144,11 @@ section#intro h1 {
   padding: 30px 150px;
 }
 
+section#intro {
+  box-shadow: none;
+  border: none;
+}
+
 section#updates .holograph {
   height: 100%;
 }
