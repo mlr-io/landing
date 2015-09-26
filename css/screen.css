@@ -1,4 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,400,400italic,700italic);
 
 *, *:before, *:after {
   -moz-box-sizing: border-box;
@@ -10,39 +11,61 @@
 }
 
 body, html {
-  font-family: 'Montserrat';
-
+  font-family: 'Open Sans', sans-serif;
   color: #333;
 }
 
-body > header {
-  text-align: center;
-  padding: 10vh 0px;
-
-  background-image: url(https://unsplash.it/3440/1440);
-  background-attachment: fixed;
-  background-size: cover;
+h1, h2, h3, h4, h5 {
+  font-family: 'Montserrat', sans-serif;
 }
 
-body > header #logo {
-  width: 360px;
+body > header {
+  position: relative;
+  padding-top: 20px;
+}
+
+body > header img {
+  width: 300px;
   display: block;
   margin: 0px auto;
 }
 
-body > header #title {
+body > header > h3 {
   text-align: center;
-  font-size: 26px;
-  color: #FFF;
+  font-size: 20px;
+  letter-spacing: 3px;
+  color: #333;
   margin-bottom: 10px;
-  text-transform: uppercase;
+}
+
+body > header > nav {
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  border-bottom: 1px solid #EEE;
+  border-top: 1px solid #EEE;
+}
+
+body > header > nav > a {
+  min-width: 110px;
+  padding: 5px;
+  display: inline-block;
+  font-family: montserrat;
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+  text-align: center;
+}
+
+body > main {
+  padding: 40px 0px;
 }
 
 section.card {
   max-width: 1024px;
   margin: 0px auto;
   border: 1px solid#DDD;
-  margin-bottom: 65px;
+  margin-bottom: 40px;
   text-align: left;
   box-shadow: 0px 0px 3px #DDD;
 }
@@ -56,7 +79,7 @@ section.card.gears {
 section.card .body {
   width: 100%;
   background: #FFF;
-  padding: 20px;
+  padding: 40px 20px;
   overflow: hidden;
 }
 
@@ -72,6 +95,11 @@ section.card .holograph.red {
   background: rgba(255, 57, 57, .88);
 }
 
+section.card .holograph.white {
+  background: rgba(255,255,255,0.9);
+  color: #555;
+}
+
 section.card .holograph.blue {
   background: rgba(57, 57, 255, .88);
 }
@@ -80,9 +108,8 @@ section.card .holograph.purple {
   background: rgba(161, 0, 255, 0.88);
 }
 
-section.card h1 {
+section.card header h1 {
   width: 100%;
-  color: #FFF;
   text-align: center;
 
   font-size: 45px;
@@ -93,9 +120,13 @@ section.card img {
   height: 250px;
 }
 
-section.card .body p {
-  padding: 5px 20px;
-  float: left;
+section.card .body p, section.card .body ul {
+  padding: 0px 20px;
+  margin-top: 10px;
+}
+
+section.card .body li {
+  padding-left: 15px;
 }
 
 section.card img.left {
@@ -110,7 +141,7 @@ section#intro h1 {
   width: 100%;
   text-align: center;
   font-size: 35px;
-  padding: 50px 0px
+  padding: 30px 150px;
 }
 
 section#updates .holograph {
@@ -129,7 +160,7 @@ footer {
 
 .scaffolding {
   width: 100%;
-  max-width: 960px;
+  max-width: 1024px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -167,6 +198,11 @@ input[type=submit] {
 input[type=submit]:hover {
   background-color: #0497FB;
 }
+
+input[type=submit]:active {
+  background-color: #7FD7FF;
+}
+
 
 form {
   padding: 35px 0px;

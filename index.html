@@ -8,10 +8,21 @@
     <header>
       <a href="http://mlr.io"><img id="logo" src="./img/logo.svg" alt="Major League Robotics Logo"></a>
       <h3 id="title">Major League Robotics</h3>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Calendar</a>
+        <a href="#">Resources</a>
+        <a href="#">Blog</a>
+      </nav>
     </header>
-    <main>
-      <section id="intro">
-        <h1>The <span style="color: #FF4E4E">Open</span>, <span style="color: #3586FF">Inclusive</span> and <span style="color: #B96DFF;">Extensible</span> Competitive Robotics League.</h1>
+    <main class="scaffolding">
+      <section class="card gears" id="intro">
+        <div class="holograph white">
+          <header>
+            <h1>MLR is an <span style="color: #FF4E4E">open</span>, <span style="color: #3586FF">inclusive</span> and <span style="color: #B96DFF;">extensible</span> Competitive Robotics League.</h1>
+          </header>
+        </div>
       </section>
 
       <section class="card gears" id="open">
@@ -20,12 +31,13 @@
         </header>
 
         <div class="body">
-          <img src="https://unsplash.it/500/500?random=1&gravity=east" class="left"/>
+          <!-- <img src="https://unsplash.it/500/500?random=1&gravity=east" class="left"/> -->
           <p>
-            Some stuff about<br/>
-            - Github<br/>
-            - Policy<br/>
-            - Rules (non-tech)
+            The framework for MLR in its entirety is hosted on <a href="https://github.com/mlr-io">github</a>. The framework consists of both technical and non-technical documentation including game rules, code of conduct, API documentation and robot example code. All aspects of the framework may be changed through communal vote and inquiry, and all changes are reviewed by a small technical board before they are integrated.
+          </p>
+
+          <p>
+            The framework holds a few universal scores for all teams and robots as well as biographical information, match (game) information results and official event dates. All of this information is accessible through a neat API and is open to the public.
           </p>
         </div>
       </section>
@@ -35,12 +47,25 @@
           <h1>Inclusive</h1>
         </header>
         <div class="body">
-          <img src="https://unsplash.it/500/500?random=2&gravity=east" class="right"/>
+          <!-- <img src="https://unsplash.it/500/500?random=2&gravity=east" class="right"/> -->
           <p>
-            Some stuff about<br/>
-            - Being open to all-ages<br/>
-            - Being open to all skill-levels<br/>
-            - Being open to all economic backgrounds
+            We are dedicated to making competitive robotics accessible to all people, <strong>regardless of race, ethnicity, culture, national origin, colour, immigration status, social and economic class, educational level, sex, sexual orientation, gender identity and expression, age, size, family status, political belief, religion, or mental and physical ability</strong>. These are not just words we chose to shy from liability, but core beliefs we hold that will guide us towards being as inclusive and friendly as possible. We plan on proving this by integrating as many actionable rules into the framework that foster inclusivity.
+          </p>
+
+          <p>
+            <strong>One competition pool</strong> ensures that people compete against their skill level regardless of their age or status. If highschoolers perform at the level of university students, they compete at that level. Similarly, if university students perform at the level of the average highschool team, they compete at that level. Skill determines placement, not status or age.
+          </p>
+
+          <p>
+            <strong>Encouraged collaboration</strong> is built into the MLR framework's structure. Teams are given another ranking based on cooperative behaviour, and receive merits and boosts for things like subsidizing other teams, open sourcing robot designs, and sharing resources through our part-sharing market (coming soon).
+          </p>
+
+          <p>
+            <strong>Low/No competition fees</strong> ensure that people of all economic backgrounds are capable of participating. Some of the world's most popular robotics competitions are known for having unrealistically high entry fees that venture into the thousands. These fees are known to keep low-income and underpriveleged competitors out of the spotlight and unable to compete, especially in competitions that predominantly consist of highschoolers. We plan on fighting this by only requiring the minimum necessary to host competitions and keep our program afloat.
+          </p>
+
+          <p>
+            We are currently basing our code of conduct on <a href="https://github.com/mlr-io/code-of-conduct">Twitter's code of conduct</a>, which is a derivative work of the <a href="https://github.com/todogroup/opencodeofconduct">Open Code of Conduct</a> drafted by todogroup. We believe that while it is not perfect, it provides basic protection towards undesirable, insensitive, and exclusionary behaviour during contribution to and participation in Major League Robotics. It will be iterated upon, edited and changed as time goes on. We may change what we base our code of conduct on or scrap it and start from the ground up.
           </p>
         </div>
       </section>
@@ -50,12 +75,15 @@
           <h1>Extensible</h1>
         </header>
         <div class="body">
-          <img src="https://unsplash.it/500/500?random=3&gravity=east" class="left"/>
           <p>
-            Some stuff about<br/>
-            - Frameworks / game info<br/>
-            - Other junk <br/>
+            Here is where we get technical. The MLR framework is designed to be modular and technology-agnostic. One central registry keeps track of a few essentials and standard scores while the community develops the rest, and it is integrated into our ecosystem.
           </p>
+
+          <p>
+            One such mechanism for extensibility is the <strong>Game Proposal Pipeline</strong> - a procedure in which contributors can create proposals and <a href="https://en.wikipedia.org/wiki/Request_for_Comments">RFC</a>-like documents that are reviewed by the community, adjusted, and then adapted to our standard scoring system, reviewed internally, and merged into our list of official games. Once a game is merged, anyone can 
+          </p>
+
+          <p>All internal reviews are made public after final decisions are made.</p>
         </div>
       </section>
 
@@ -70,10 +98,10 @@
             <form action="//mlr.us10.list-manage.com/subscribe/post?u=d5aca77a5619a1d6247523c4a&amp;id=479cc5cc28" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                 <div id="mc_embed_signup_scroll">
               
-            <div class="mc-field-group">
-              <p>Sign up for our mailing list</p><br/>
-              <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="you@example.com">
-            </div>
+              <div class="mc-field-group">
+                <p>Join our mailing list for updates on game design, events and development status</p><br/>
+                <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="you@example.com">
+              </div>
 
          
               <div id="mce-responses" class="clear">
