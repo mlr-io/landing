@@ -71,7 +71,7 @@ section.card {
 }
 
 section.card.gears {
-  background-image: url(../img/tile.svg);
+  background-image: url('../img/tile.svg');
   background-attachment: fixed;
   background-size: 35%;
 }
